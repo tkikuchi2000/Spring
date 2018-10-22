@@ -48,7 +48,7 @@ import UIKit
         didSet {
             if let image = firstSelectedImage {
                 var tabBarItems = self.tabBar.items
-                tabBarItems?[0].selectedImage = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                tabBarItems?[0].selectedImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
         }
     }
@@ -57,7 +57,7 @@ import UIKit
         didSet {
             if let image = secondSelectedImage {
                 var tabBarItems = self.tabBar.items
-                tabBarItems?[1].selectedImage = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                tabBarItems?[1].selectedImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
         }
     }
@@ -66,7 +66,7 @@ import UIKit
         didSet {
             if let image = thirdSelectedImage {
                 var tabBarItems = self.tabBar.items
-                tabBarItems?[2].selectedImage = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                tabBarItems?[2].selectedImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
         }
     }
@@ -75,7 +75,7 @@ import UIKit
         didSet {
             if let image = fourthSelectedImage {
                 var tabBarItems = self.tabBar.items
-                tabBarItems?[3].selectedImage = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                tabBarItems?[3].selectedImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
         }
     }
@@ -84,7 +84,7 @@ import UIKit
         didSet {
             if let image = fifthSelectedImage {
                 var tabBarItems = self.tabBar.items
-                tabBarItems?[4].selectedImage = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+                tabBarItems?[4].selectedImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
             }
         }
     }
@@ -94,7 +94,7 @@ import UIKit
         if let items = self.tabBar.items {
             for item in items {
                 if let image = item.image {
-                    item.image = image.imageWithColor(tintColor: self.normalTint).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+                    item.image = image.imageWithColor(tintColor: self.normalTint).withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
                 }
             }
         }
